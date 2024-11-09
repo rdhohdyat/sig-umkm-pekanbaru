@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMKM Pekanbaru - Data UMKM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .active-link {
+        color: #0d3e69;
+        border-bottom: 2px solid #0d3e69;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+      <nav
+      class="shadow bg-white p-5 px-5 px-20 fixed top-0 right-0 left-0 bg-white z-50"
+    >
+      <div class="flex justify-between items-center px-20">
+        <h1 class="text-[#0D3E69] font-bold text-xl">UMKMPekanbaru</h1>
+        <button
+          class="sm:hidden text-[#0D3E69] focus:outline-none"
+          onclick="toggleMenu()"
+          aria-label="Toggle menu"
+        >
+
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div id="navLinks" class="hidden sm:flex gap-10">
+          <a
+            href="index.html"
+            class="nav-menu-link font-semibold hover:text-[#0D3E69]"
+            >Home</a
+          >
+          <a
+            href="location.html"
+            class="nav-menu-link font-semibold hover:text-[#0D3E69]"
+            >Location</a
+          >
+          <a
+            href="data_umkm.html"
+            class="nav-menu-link font-semibold hover:text-[#0D3E69]"
+            >Data UMKM</a
+          >
+        </div>
+      </div>
+      <div id="mobileMenu" class="sm:hidden hidden flex flex-col gap-4 mt-4">
+        <a
+          href="index.html"
+          class="nav-menu-link font-semibold hover:text-[#0D3E69]"
+          >Home</a
+        >
+        <a
+          href="location.html"
+          class="nav-menu-link font-semibold hover:text-[#0D3E69]"
+          >Location</a
+        >
+        <a
+          href="data_umkm.html"
+          class="nav-menu-link font-semibold hover:text-[#0D3E69]"
+          >Data UMKM</a
+        >
+      </div>
+    </nav>
+
+    <section class="pt-24 px-5 sm:px-10 md:px-20 flex justify-center">
+      <div class="rounded-lg w-full">
+        <div class="flex flex-col items-center gap-5">
+          <div class="relative w-full md:w-1/2">
+            <input
+              type="text"
+              placeholder="Cari UMKM di sini"
+              class="w-full py-2 px-4 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0D3E69]"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-4.35-4.35m2.35-6.65a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 sm:px-10 md:px-20 py-10">
+      <div class="w-1/4 mb-3">
+        <label class="font-semibold text-gray-700">Kategori :</label>
+        <select
+          class="w-full mt-2 py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0D3E69]"
+        >
+          <option>Makanan</option>
+          <option>Kerajinan Tangan</option>
+          <option>Pakaian</option>
+          <option>Jasa</option>
+        </select>
+      </div>
+      <div class="overflow-x-auto bg-white shadow rounded-lg">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr>
+              <th class="border-b p-4 font-semibold text-gray-600">
+                Nama UMKM
+              </th>
+              <th class="border-b p-4 font-semibold text-gray-600">
+                Nomor Telepon
+              </th>
+              <th class="border-b p-4 font-semibold text-gray-600">Kategori</th>
+              <th class="border-b p-4 font-semibold text-gray-600">
+                Alamat Lengkap
+              </th>
+            </tr>
+          </thead>
+          <tbody id="umkmTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="bg-[#0D3E69] text-gray-500 fixed bottom-0 left-0 right-0 py-4 text-center">
+      <p>Copyright © All Rights Reserved 2024 🔥 TEAM 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
