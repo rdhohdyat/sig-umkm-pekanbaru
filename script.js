@@ -8,18 +8,16 @@ function setActiveLink() {
   document.querySelectorAll(".nav-menu-link").forEach((link) => {
     const linkPath = link.getAttribute("href");
 
-    if (
-      (currentPath === "" || currentPath.endsWith("index.html")) &&
-      linkPath === "index.html"
-    ) {
+    if ((currentPath === "/" && linkPath === "index.html") || currentPath.endsWith(linkPath)) {
       link.classList.add("active-link");
-    } else if (currentPath.endsWith(linkPath)) {
-      link.classList.add("active-link");
+    } else {
+      link.classList.remove("active-link");
     }
   });
 }
 
 setActiveLink();
+
 
 const umkmData = [
   {
