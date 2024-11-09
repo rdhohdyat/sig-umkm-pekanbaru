@@ -9,7 +9,7 @@ function setActiveLink() {
     const linkPath = link.getAttribute("href");
 
     if (
-      (currentPath === "/" || currentPath.endsWith("index.html")) &&
+      (currentPath === "" || currentPath.endsWith("index.html")) &&
       linkPath === "index.html"
     ) {
       link.classList.add("active-link");
