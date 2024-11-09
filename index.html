@@ -26,17 +26,14 @@
     </style>
   </head>
   <body class="bg-gray-100 no-scroll-bar">
-    <nav
-      class="shadow bg-white p-5 px-5 px-20 fixed top-0 right-0 left-0 bg-white z-50"
-    >
-      <div class="flex justify-between items-center px-20">
+    <nav class="shadow bg-white p-5 fixed top-0 right-0 left-0 bg-white z-50">
+      <div class="flex justify-between items-center sm:px-20">
         <h1 class="text-[#0D3E69] font-bold text-xl">UMKMPekanbaru</h1>
         <button
           class="sm:hidden text-[#0D3E69] focus:outline-none"
           onclick="toggleMenu()"
           aria-label="Toggle menu"
         >
-
           <svg
             class="w-6 h-6"
             fill="none"
@@ -110,32 +107,40 @@
 
     <section class="py-10 relative -mt-[150px] z-20">
       <div
-        class="mx-auto px-4 sm:px-10 md:px-20 grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-32"
+        class="px-4 sm:px-20 flex justify-center grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 lg:gap-32"
       >
         <div
-          class="bg-[#DFF2F7] h-[250px] rounded-2xl shadow p-5 text-center flex flex-col items-center justify-center gap-5"
+          class="bg-[#DFF2F7] h-[250px] rounded-2xl shadow p-5 text-center flex flex-col items-center justify-center gap-3 sm:gap-5"
         >
-          <h2 class="text-[#005097] font-bold text-2xl">Dukung</h2>
-          <p class="text-3xl font-bold">100+</p>
-          <p class="text-black font-semibold w-[210px]">
+          <h2 class="text-[#005097] font-bold text-xl sm:text-2xl">Dukung</h2>
+          <p class="text-2xl sm:text-3xl font-bold">100+</p>
+          <p
+            class="text-black font-semibold w-full sm:w-[210px] text-sm sm:text-base"
+          >
             UMKM Lokal di Kota Pekanbaru
           </p>
         </div>
         <div
-          class="bg-[#DFF2F7] rounded-2xl shadow p-5 text-center flex flex-col items-center justify-center gap-5"
+          class="bg-[#DFF2F7] h-[250px] rounded-2xl shadow p-5 text-center flex flex-col items-center justify-center gap-3 sm:gap-5"
         >
-          <h2 class="text-[#005097] font-bold text-2xl">Sudah ada</h2>
-          <p class="text-3xl font-bold">300+</p>
-          <p class="text-black font-semibold w-[210px] text-center">
+          <h2 class="text-[#005097] font-bold text-xl sm:text-2xl">
+            Sudah ada
+          </h2>
+          <p class="text-2xl sm:text-3xl font-bold">300+</p>
+          <p
+            class="text-black font-semibold w-full sm:w-[210px] text-sm sm:text-base"
+          >
             Produk UMKM Tersedia di Pekanbaru
           </p>
         </div>
         <div
-          class="bg-[#DFF2F7] rounded-2xl shadow p-5 text-center flex flex-col items-center justify-center gap-5"
+          class="bg-[#DFF2F7] h-[250px] rounded-2xl shadow p-5 text-center flex flex-col items-center justify-center gap-3 sm:gap-5"
         >
-          <h2 class="text-[#005097] font-bold text-2xl">Terdapat</h2>
-          <p class="text-3xl font-bold">10+</p>
-          <p class="text-black font-semibold w-[210px]">
+          <h2 class="text-[#005097] font-bold text-xl sm:text-2xl">Terdapat</h2>
+          <p class="text-2xl sm:text-3xl font-bold">10+</p>
+          <p
+            class="text-black font-semibold w-full sm:w-[210px] text-sm sm:text-base"
+          >
             UMKM Baru Bergabung Setiap Bulannya
           </p>
         </div>
@@ -147,12 +152,12 @@
         <h2 class="text-[#005097] font-bold text-3xl">
           Temukan Banyak Kategori UMKM
         </h2>
-        <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-20">
+        <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-16">
           <div class="bg-white rounded-2xl shadow text-center">
             <img
               src="img/kerajinan_tangan.png"
               alt="Kerajinan Tangan"
-              class="rounded-t-2xl mb-3"
+              class="rounded-t-2xl mb-3 w-full"
             />
             <p class="font-bold text-xl p-5">Kerajinan Tangan</p>
           </div>
@@ -160,7 +165,7 @@
             <img
               src="img/makanan.png"
               alt="Makanan"
-              class="rounded-t-2xl mb-3"
+              class="rounded-t-2xl mb-3 w-full"
             />
             <p class="font-bold text-xl p-5">Makanan</p>
           </div>
@@ -168,12 +173,16 @@
             <img
               src="img/pakaian.png"
               alt="Pakaian"
-              class="rounded-t-2xl mb-3"
+              class="rounded-t-2xl mb-3 w-full"
             />
             <p class="font-bold text-xl p-5">Pakaian</p>
           </div>
           <div class="bg-white rounded-2xl shadow text-center">
-            <img src="img/jasa.png" alt="Jasa" class="rounded-t-2xl mb-3" />
+            <img
+              src="img/jasa.png"
+              alt="Jasa"
+              class="rounded-t-2xl mb-3 w-full"
+            />
             <p class="font-bold text-xl p-5">Jasa</p>
           </div>
         </div>
